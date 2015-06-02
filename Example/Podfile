@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'howie_Example', :exclusive => true do
+  pod "howie", :path => "../"
+end
+
+target 'howie_Tests', :exclusive => true do
+  pod "howie", :path => "../"
+
+  pod 'Kiwi'
+end
